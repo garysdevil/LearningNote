@@ -1,0 +1,13 @@
+Autorun.inf
+
+自启动项
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+HKEY_CURRENT_MACHINE\
+
+病毒向电脑的操作：
+对文件进行操作
+对注册表进行操作
+对进程的操作
+加载一个驱动，修改SSDT
+
+图标：*.bmp

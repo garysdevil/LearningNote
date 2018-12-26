@@ -1,0 +1,4 @@
+小程序开发框架
+View 视图层 
+App Service 逻辑层：Manager API。
+Native 系统层 ： JSBridge ，微信能力，离线存储，网络请求....

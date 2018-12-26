@@ -1,0 +1,59 @@
+按功能分：
+连接层  数据库的连接，验证
+SQL层	解析查询，优化查询，执行查询	
+存储层   磁盘（InnoDB，MyISAM），内存memory，网络ndb
+
+
+开始，检查高速缓存查询，解析查询，优化查询，执行查询，更新高速缓存查询，完成
+
+show processlist; -- 显示系统中正在运行的所有进程，也就是当前正在执行的查询。大多数用户可以查看他们自己的进程，但是如果他们拥有process权限，就可以查看所有人的进程，包括密码。
+
+show table status; -- 显示当前使用或者指定的database中的每个表的信息。信息包括表类型和表的最新更新时间。
+
+show warnings; -- 显示最后一个执行的语句所产生的错误、警告和通知。
+
+查看当前数据库里有哪些用户
+select user from mysql.user;
+
+查看创建的用户mingongge拥有哪些权限
+show grants for mingongge@localhost
+
+查看当前登录的用户
+select user();
+
+
+1.导出结构不导出数据 
+
+复制代码代码如下:
+mysqldump　--opt　-d　数据库名　-u　root　-p　>　xxx.sql　
+-t  只导出数据
+
+sql语句分类如下
+DDL 数据定义语言，用来定义数据库对象：库、表、列
+代表性关键字：create alter drop
+DML 数据操作语言，用来定义数据库记录
+代表性关键字:insert delete update
+DCL 数据控制语言，用来定义访问权限和安全级别
+代表性关键字:grant deny revoke
+DQL 数据查询语言，用来查询记录数据
+代表性关键字:select
+
+group_concat()。
+可以对分组的结果中的某个字段进行字符串连接。
+
+1．错误日志   记录启动、运行或停止mysqld时出现的问题
+    
+        log-error=d:/mysql_log_err.txt
+        
+    2．查询日志    记录建立的客户端连接和执行的所有语句（包括错误的）。
+        
+        log=d:/mysql_log.txt
+
+    3、二进制日志    记录所有更改数据的语句、还用于主从复制
+        log-bin=d:/mysql_log_bin
+        
+    4．慢日志    记录所有执行时间超过long_query_time秒的所有查询
+        long_query_time =1 #时间
+        log-slow-queries= d:/mysql_log_slow.txt
+        
+  注：log-update 更新日志已经被 log-bin 取代了，如果定义了会导致服务不可启动

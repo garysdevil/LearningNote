@@ -1,0 +1,11 @@
+wxss
+尺寸单位rpx
+外联样式导入
+内联样式
+选择器
+
+外联样式导入 @import '*.wxss文件夹位置'
+
+
+权重
+!important > style > #element > .element > element
