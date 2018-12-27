@@ -1,0 +1,35 @@
+node.js的组成
+ECMAScript(语法基础)
+OS（操作系统）
+file（文件系统）
+net(网络系统)
+database(数据库)
+
+创建第一个Node.js应用
+1. 引入required模块：我们可以使用require指令来载入Node.js模块。
+2. 创建服务器：服务器可以监听客户端的请求，类似于Apache,Nginx等HTTP服务器。
+3. 接收请求与响应请求：。
+
+
+程序，无非是进行运算和IO操作
+为什么说node.js是单线程高性能适合IO密集型的程序呢？
+因为在node.js中，只有主线程在不断地循环等待进行运算，与cpu打交道。
+所有的运算操作都要排队，一一要交给主线程。从而避免了线程切换所带来的各种开销。
+每一次IO操作，node.js都可以进行异步操作，交给一个新的线程去执行。
+
+总而言之：IO操作是多线程的，CPU操作是单线程的。
+
+
+事件驱动
+events.EventEmitter()
+util.inherits(对象名 , events.EventEmitter);
+readFile('路径',回调函数);
+
+.on
+.emit
+
+IO操作
+fs
+流
+buffer
+管道操作 .pipe()

@@ -1,0 +1,5 @@
+Dim name,msg 
+msg="请输入你的名字:" 
+name=Inputbox(msg,"fd","fds") 
+REM Msgbox name 
+const PI=3.1415962  REM 常量

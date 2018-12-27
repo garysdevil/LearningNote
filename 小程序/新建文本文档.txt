@@ -1,0 +1,8 @@
+清空输入框input的两种方式
+一：使input的value绑定一个变量<input value='{{myinput}}'></input>，使某个组件绑定一个事件，当事件触发，触发的内容为
+ this.setData({
+     myinput:""
+    })
+
+二：
+把input组件和button组件放入form组件中，设置buttom组件的属性为formType="reset"

@@ -1,0 +1,10 @@
+chipuno   先把牛奶制造成牛奶泡沫，然后导入杯子，之后放入咖啡。
+
+flat white  先放入咖啡，然后使用牛奶冲淡咖啡的苦味。
+
+chipuno的苦味于flat white，flat white基本没有苦味
+
+
+浓缩咖啡 热牛奶 奶泡。相同杯型前提下，
+奶泡的比例卡布奇诺> 拿铁 > Flat White，
+牛奶的比例Flat White> 拿铁 > 卡布奇诺

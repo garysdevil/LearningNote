@@ -1,0 +1,29 @@
+*.wxml 
+功能:
+数据绑定
+列表渲染
+条件渲染
+模版引用
+	
+wxml标签的共同属性：
+id   class  style  hidden  
+data-* 自定义属性，定义回调函数
+bind*/catch*  组件事件
+
+
+if elif切换消耗
+hidden初始化渲染消耗
+
+
+模版的定义与数据的传输
+<template name="aa">
+  <view>
+  <view>姓名：{{name}}</view>
+   <view>手机：{{tele}}</view>
+  </view>
+</template>
+<template is="aa" data="{{...addr}}"></template>
+
+import 用来引用模板
+include 不能  
+

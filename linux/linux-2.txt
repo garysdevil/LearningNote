@@ -1,0 +1,38 @@
+find 查找文件  
+-type  -name 
+
+locate 查找文件，从/var/lib/locatedb(这个数据库中含有本地所有的文件信息)
+
+
+whereis 只能搜索二进制文件，即通过程序名搜索
+
+which 在PATH变量指定的路径中，搜索某个系统命令的位置。
+
+
+
+umask -S 查看当前用户创建文件时默认的权限
+du -sh  查看文件夹的大小
+
+df 将系统内所有的分区列出来
+
+
+分区操作
+fdisk -l 查看系统内的所有分区
+mke2f  格式化
+磁盘格式化
+mke2fs 设备名称
+
+磁盘检验：
+fsck  
+badblocks
+
+磁盘载入与卸载
+mount
+unmount
+
+修改磁盘参数
+mknod
+e2label
+tune2fs
+hdparm
+

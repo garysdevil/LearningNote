@@ -1,0 +1,23 @@
+"tabBar": {
+    "selectedColor": "#1296db",
+    "position":"top",
+
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "对不起"
+      },
+      {
+        "pagePath": "pages/test1/test",
+        "text": "test1"
+      }
+    ]
+  }

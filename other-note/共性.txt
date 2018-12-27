@@ -1,0 +1,9 @@
+面向对象的语言
+
+Javascript的数据类型比较简单，有object、string、boolean、number、null和undefined，总共六种
+
+Python中一切均为对象，像module、function、class等等都是。
+
+js	数组：new Array()  对象｛属性:“值”｝
+python  列  集合  字典 数组 
+java    列  集合   map  数组 

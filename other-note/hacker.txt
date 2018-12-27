@@ -1,0 +1,24 @@
+C:\Windows\System32\drivers\etc  存放域名解析记录
+chrome://net-internals
+
+
+那么TTL的值一开始是什么呢？不同的操作系统默认下TTL是不同的。默认情况下，Linux系统的TTL值为64或255，Windows NT/2000/XP系统的TTL值为128，Windows 98系统的TTL值为32，UNIX主机的TTL值为255。
+
+
+【全平台客户端下载】[https://github.com/getlantern/forum/issues/5620]客户端用于各种设备连接到服务器实现翻墙。
+SSR官方网站：https://shadowsocks.org/en/index.html（什么版本都有可惜是英文版的）
+Windows SSR客户端下载：https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases
+MAC SSR客户端下载：https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases[https://github.com/qinyuhang/ShadowsocksX-NG-R/releases
+]
+安卓 SSR客户端：https://github.com/shadowsocksr-backup/shadowsocksr-android/releases
+
+安装ssrmu
+链接1  wget -N --no-check-certificate https://makeai.cn/bash/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
+链接2  wget -N –no-check-certificate https://raw.githubusercontent.com/hugoyuice/shadowsocks_all/master/shadowsocksR.sh 
+安装BBR加速器
+wget -N --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && bash bbr.sh
+
+文件位置
+安装目录：/usr/local/shadowsocksr
+配置文件：/usr/local/shadowsocksr/user-config.json
+数据文件：/usr/local/shadowsocksr/mudb.json

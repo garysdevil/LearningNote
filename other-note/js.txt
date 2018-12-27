@@ -1,0 +1,17 @@
+new Array()
+push 添加到尾部
+shift 删除并返回头部元素
+pop 删除并返回尾部元素
+indexOf（''） 返回下标
+splice(index,索引) 通过索引删除元素并返回此元素
+
+
+new Map()
+set()
+get()
+delete()
+
+event.target返回触发事件的元素
+
+Jquery:
+$(selector).each(function(index,element))

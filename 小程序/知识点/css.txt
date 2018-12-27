@@ -1,0 +1,6 @@
+dispay:flex;
+content-justify
+
+
+使用横向滚动视图时，要阻止换行
+white-space: nowrap;

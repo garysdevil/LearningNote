@@ -1,0 +1,14 @@
+组件：
+1媒体地图
+2地图
+3开放能力
+4画布
+5视图容器
+6基础内容
+7表单组件
+8导航
+
+
+5视图容器：view,scroll-view,swiper,movable-view,cover-view
+hover-class
+6基础内容:icon,text,rich-text,progress
