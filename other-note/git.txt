@@ -17,7 +17,12 @@ commit --> --- --modify
 
 git status
 
-git diff
+获取远端库最新信息
+git fetch origin
+做diff
+git diff xxx origin/xxx
+
+
 
 git log 
  --graph     # 图像化分支和版本更新
