@@ -1,0 +1,37 @@
+CPU 内存 硬盘 网卡 显卡 IO设备
+
+主机服务
+NAT（类似IP共享的功能）：Network Address Transaction
+SAMBA（类似网上邻居的功能）是一个普通的文件服务器
+Mail（邮件服务器）
+Web（WWW服务器）
+DHCP（动态主机配置协议）
+Proxy（代理服务器）
+FTP
+
+
+文件系统 ext2 ext3
+
+日志文件位置
+/var/spool/mail/
+
+更改普通用户权限为root
+/etc/sudoers
+
+查看登录失败的用户信息
+命令: lastb
+
+lsof 是 linux 下的一个非常实用的系统级的监控、诊断工具。
+1  监控文件 查看文件、设备被哪些进程占用  lsof 文件路径名
+2  监控进程 指定进程号，可以查看该进程打开的文件  lsof -p 进程号
+3  监控网络 查看指定端口有哪些进程在使用（lsof -i 列出所有的打开的网络连接） lsof -i:进程号
+4  监控用户 查看指定用戶打开的文件（lsof -u ^lakshmanan 可以排除某用户）： lsof -u 用户名
+5  监控应用程序 查看指定程序打开的文件： lsof -c 程序名
+
+存放登录成功的信息
+/var/log/wtmp 
+存放登录失败的信息
+/var/log/btmp
+
+重启sshd
+/sbin/service sshd restart
