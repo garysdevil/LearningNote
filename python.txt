@@ -47,3 +47,6 @@ selenuim
 https://www.cnblogs.com/baiboy/p/pc1.html
 https://www.cnblogs.com/miqi1992/p/8093958.html
 将PyV8.py以及_PyV8.so上传到 python 的 site-packages目录下 即可
+
+解决vscode中文乱码
+https://blog.csdn.net/smilejiasmile/article/details/80588546
