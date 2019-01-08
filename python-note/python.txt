@@ -1,0 +1,55 @@
+
+raise ：主动报出异常
+
+pass ：def占空位
+
+
+安装python插件
+打开VScode，Ctrl+p
+输入 "ext install python"，搜索时间可能会比较长
+F5 运行
+
+安装flake8之后写代码的时候编辑器就会提示哪里出错，代码格式不规范也会提示
+打开命令行
+输入 "pip install flake8"
+安装flake8成功后，打开VScode，文件->首选项->用户设置，在settings.json文件中输入"python.linting.flake8Enabled": true
+
+配置yapf
+安装yapf之后在VScode中按Alt+Shift+F即可自动格式化代码
+打开命令行
+输入 "pip install yapf"
+安装yapf成功后，打开VScode，文件->首选项->用户设置，在settings.json文件中输入"python.formatting.provider": "yapf"
+
+pandas
+ ‘bar’ or ‘barh’ for bar plots #条状图 
+
+? ‘hist’ for histogram #频率柱状图（计算某些值出现的频率） 
+
+? ‘box’ for boxplot #箱线图（）
+
+? ‘kde’ or ‘density’ for density plots #密度图（需要scipy这个包） 
+
+? ‘area’ for area plots #区域图（不同域的面积占比） 
+
+? ‘scatter’ for scatter plots #散点图 >>> plt.scatter(df['part A'], df['part B']) 
+
+? ‘hexbin’ for hexagonal bin plots # >>> plt.hexbin(df['part A'], df['part B'], df['part C'])
+
+? ‘pie’ for pie plots #饼图，比较适合与Series对象，看不同的占比 
+
+列表嵌套字典排序
+sorted(data, key = lambda x : x['totalPrice(元)'], reverse=True) 
+or
+import operator
+info = sorted(info, key=operator.itemgetter('loc')) 
+
+selenuim
+https://www.cnblogs.com/baiboy/p/pc1.html
+https://www.cnblogs.com/miqi1992/p/8093958.html
+将PyV8.py以及_PyV8.so上传到 python 的 site-packages目录下 即可
+
+解决vscode中文乱码
+https://blog.csdn.net/smilejiasmile/article/details/80588546
+
+国内高匿代理IP
+https://www.xicidaili.com/nn/

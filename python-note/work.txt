@@ -1,0 +1,18 @@
+
+Sasha：
+房源  面积  单价 总价  写字楼基本信息  
+分类抓取  
+
+
+嘉丽：
+哪些写字楼和商业？ 在租赁
+
+上海有多少的写字楼
+写字楼的位置
+
+
+ BeautifulSoup
+Tag 是一个标签
+Tag中的字符串即为NavigableString对象。
+BeautifulSoup表示的是一个文档的全部内容
+Comment类型是NavigableString类型的子类
