@@ -53,3 +53,9 @@ https://blog.csdn.net/smilejiasmile/article/details/80588546
 
 国内高匿代理IP
 https://www.xicidaili.com/nn/
+
+ BeautifulSoup
+Tag 是一个标签
+Tag中的字符串即为NavigableString对象。
+BeautifulSoup表示的是一个文档的全部内容
+Comment类型是NavigableString类型的子类
