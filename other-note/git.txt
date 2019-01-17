@@ -1,4 +1,4 @@
-1. Git基本配置
+﻿1. Git基本配置
 git config可以配置git的参数
 使用git config --list查看已经配置的git参数。
 有三个级别的保存位置，--system、--global、--local，分别表示所有用户（本系统）、当前用户（全局）、本地配置（当前目录），默认使用--local。
@@ -49,3 +49,7 @@ bash下的提交过程
 3 git push 
 
 git reset --soft --mix --hard
+
+
+比较本地仓库和远程仓库的差异
+git diff --stat 仓库名 origin
