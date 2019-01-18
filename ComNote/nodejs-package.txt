@@ -1,4 +1,8 @@
-knex mongoose mongod  mencached  
+nrm    库下载地址管理工具
+mvn   nodejs版本管理工具
+
+postgresql的连接
+psql -h 127.0.0.1 -p 15432 -U modelodev -d bim_product
 
 Dataloader（官方网址）是由facebook推出，能大幅降低数据库的访问频次，经常在Graphql场景中使用。
 主要通过2个机制来降低数据库的访问频次：批处理 和 缓存。
@@ -8,22 +12,3 @@ Knex.js是为Postgres，MSSQL，MySQL，MariaDB，SQLite3，Oracle和Amazon Redshift设计
 mongodb
 1. 查询所有字段：db.表名.fing({ 条件})
 2. db.表名.fing({ 条件} , { 查询的字段})
-
-1.Model.create(data, [callback(error, doc)])：创建一个新的Mongoose文档并保存到数据库 
-
-2.Model.remove(query, [callback(error)])：删除集合中与查询条件匹配的文档。当完成时，调用带error参数的回调函数。
- 
-3.Model.find(query, [fields], [options], [callback(error, docs)])：查找与查询条件（JSON对象）匹配的文档 
-
-4.Model.update(query, update, [options], [callback(error, affectedCount, raw)])：更新文档，与本地更新类似 
-
-5.Model.populate(docs, options, [callback(error, doc)])：使用其他集合的引用来填充文档；这是替换的另一种说法 
-
-6.Model.findOne(query, [fields], [options], [callback(error, doc)])：查找第一个与查询条件匹配的文档 
-
-7.Model.findById(id, [fields], [options], [callback(error, doc)])：查找第一个_id值与id参数相同的元素（id根据原型进行类型转换） 
-
-8.Model.findOneAndUpdate([query], [update], [options], [callback(error, doc)])：查找第一个和查询条件匹配的文档然后更新他，并且返回这个文档对象；同类型的方法是findAndModify 
-9.Model.findOneAndRemove(query, [options], [callback(error, doc)])：查找第一个和查询条件匹配的文档然后删除他，并且返回这个文档对象 
-
-10.Model.findByIdAndUpdate(id, [update], [options], [callback(error, doc)])：和findOneAndUpdate类似，但是只用ID来匹配
