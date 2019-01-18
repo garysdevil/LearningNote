@@ -1,0 +1,23 @@
+本地modelo账号：
+tdeng@modelo.io
+11111111
+
+
+
+bim：
+连接postgreql数据库  psql postgresql://modelodev:password@localhost:5432/bim_product
+https://bim.modeloapp.com  账号密码： Tylin modeloBI560
+
+front:
+https://modelo.io/    US
+https://modeloapp.com/login   CN
+
+dev:  https://develop.modelo.io/login
+pro:  https://portal.modelo.io/webs/login.html
+
+modelo-backend:
+https://portal.modelo.io/webs/login.html
+账号密码:
+ypzhang@modelo.io
+yezhang617
+

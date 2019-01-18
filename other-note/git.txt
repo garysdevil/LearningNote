@@ -14,15 +14,12 @@ Git中每个文件都有三种状态：committed、staged、modified。它们之
 commit <-- stage <-- modify
 commit --> --- --modify
 
-
 git status
 
 获取远端库最新信息
 git fetch origin
 做diff
 git diff xxx origin/xxx
-
-
 
 git log 
  --graph     # 图像化分支和版本更新
@@ -38,7 +35,6 @@ git remote show origin
 
 git clone -b 分支
 
-
 git add -A  提交所有变化
 git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
 git add .   提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
@@ -49,7 +45,6 @@ bash下的提交过程
 3 git push 
 
 git reset --soft --mix --hard
-
 
 比较本地仓库和远程仓库的差异
 git diff --stat 仓库名 origin

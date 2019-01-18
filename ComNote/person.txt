@@ -1,0 +1,17 @@
+Stripe payments
+
+webhook
+
+reverse SSH tunnel
+
+google
+ccc  t 	open a new page
+ccc n 	open a new window
+ccc d 	add current page into bookmark
+ccc p 	print current page
+ccc h	 look at history
+ccc j 	look at download list
+ccc g 	next item searched
+
+
+
