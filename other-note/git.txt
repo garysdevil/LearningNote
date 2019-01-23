@@ -48,3 +48,6 @@ git reset --soft --mix --hard
 
 比较本地仓库和远程仓库的差异
 git diff --stat 仓库名 origin
+
+修改当前库的文件
+git checkout --patch B库 文件名
