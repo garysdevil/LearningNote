@@ -1,0 +1,38 @@
+调研一下power BI怎么通过API和我们DAM的模型数据联动!!
+程序内部联动
+程序与程序的联动
+
+计划刷新
+
+数据提取
+=MID([@address1],1,12)
+
+Azure AD -- test
+Application ID:
+d3b960ae-bc57-484d-a8ce-faaa3d24eb61
+Application secret:
+k9pvan6wQ3Tlzf3onTv6e5YAUHkz5IYd8PVJjrCpOSo=
+
+Power BI开始使用第三方应用
+https://docs.microsoft.com/zh-cn/power-bi/service-power-bi-get-started-third-party-apps
+
+
+nodejs包  --  将可视化通过调用API嵌入到app里
+https://github.com/Microsoft/PowerBI-JavaScript	
+
+创建流数据集，然后可以将数据通过API推送进PBI的流数据集上
+
+磁贴：可以时时显示数据（只含有少量的视图），但有时间限制（也就是说只能显示多少分钟前更新过的的数据）
+机制：数据每次上传，放进在缓存里。
+
+报表：只能通过每次进行刷新显示所有的数据（视图丰富）
+机制：数据每次上传放进dataset里，然后通过刷新读取进来。
+
+
+
+
+
+
+
+
+https://jenkins.modeloapp.com/blue/pipelines/ admin TrnRp6vsLiQtuLxanyl3OXjupw53r9

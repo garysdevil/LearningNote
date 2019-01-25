@@ -51,3 +51,6 @@ git diff --stat 仓库名 origin
 
 修改当前库的文件
 git checkout --patch B库 文件名
+
+将另一个分支的commit合并到此分支上。
+git cherry-pick commit的id号
