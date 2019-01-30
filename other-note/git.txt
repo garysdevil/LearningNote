@@ -54,3 +54,9 @@ git checkout --patch B库 文件名
 
 将另一个分支的commit合并到此分支上。
 git cherry-pick commit的id号
+
+删除远程的分支
+git push origin :分支名 （没有删除跟踪）
+git push origin --delete 分支名 （删除了跟踪）
+
+git fetch -p 删除不存在的远程跟踪分支
