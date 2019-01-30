@@ -27,12 +27,3 @@ https://github.com/Microsoft/PowerBI-JavaScript
 
 报表：只能通过每次进行刷新显示所有的数据（视图丰富）
 机制：数据每次上传放进dataset里，然后通过刷新读取进来。
-
-
-
-
-
-
-
-
-https://jenkins.modeloapp.com/blue/pipelines/ admin TrnRp6vsLiQtuLxanyl3OXjupw53r9
