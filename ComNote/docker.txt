@@ -1,3 +1,6 @@
 1.Dockerfile 定义应用的运行环境
 2.docker-compose.yml 定义组成应用的各服务
 3.docker-compose up 启动整个应用
+
+未启动容器
+docker cp 容器ID:本机文件地址 容器内地址

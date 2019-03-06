@@ -46,7 +46,7 @@ bash下的提交过程
 
 git reset --soft --mix --hard
 
-比较本地仓库和远程仓库的差异
+比较工作区和最新本地仓库的差异
 git diff --stat 仓库名 origin
 
 修改当前库的文件
