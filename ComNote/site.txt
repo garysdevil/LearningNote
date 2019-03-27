@@ -24,6 +24,7 @@ yezhang617
 
 Jeckin£º
 https://jenkins.modeloapp.com/blue/pipelines/ admin TrnRp6vsLiQtuLxanyl3OXjupw53r9
+https://jenkins.modelo.io/blue/organizations/jenkins/Modelo_billing/activity/  4d3Czb0koOOcyA==
 
 strip test account
 dashboard.strip.com       xyu@modelo.io   19900309
