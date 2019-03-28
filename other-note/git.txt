@@ -18,8 +18,10 @@ git status
 
 获取远端库最新信息
 git fetch origin
-做diff
-git diff xxx origin/xxx
+  
+git diff xxx origin/xxx  工作目录和缓冲区比较
+--cache 缓存区和本地仓库比较
+--HEAD 工作目录和本地仓库比较
 
 git log 
  --graph     # 图像化分支和版本更新
@@ -60,3 +62,11 @@ git push origin :分支名 （没有删除跟踪）
 git push origin --delete 分支名 （删除了跟踪）
 
 git fetch -p 删除不存在的远程跟踪分支
+
+git log:
+ -p，用来显示每次提交的内容差异。 你也可以加上 -2 来仅显示最近两次提交：
+git log -p -2
+--pretty=oneline，short，，
+
+git blame fileName 查看此文件内容详细信息
+git checkout . 重置工作区
