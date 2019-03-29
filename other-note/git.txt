@@ -70,3 +70,5 @@ git log -p -2
 
 git blame fileName 查看此文件内容详细信息
 git checkout . 重置工作区
+
+git remote show origin 显示所有远程的分支和相关信息
