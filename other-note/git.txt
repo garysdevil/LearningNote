@@ -74,3 +74,8 @@ git checkout . 重置工作区
 git remote show origin 显示所有远程的分支和相关信息
 
 git push origin 本地分支名:远程分支名 创建新的远程分支并push上去
+
+git diff FETCH_HEAD 接比较fetch下来的内容和本地工作区的区别
+
+git log -p + 文件名 （可查看该文件以前每一次push的修改内容）
+git log - p -1 + 文件名 （只查看该文件当前这一次的push内容）
