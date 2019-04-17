@@ -1,5 +1,6 @@
 new Array()
 push 添加到尾部
+unshift()  添加到头部
 shift 删除并返回头部元素
 pop 删除并返回尾部元素
 indexOf（''） 返回下标
