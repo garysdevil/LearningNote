@@ -1,0 +1,12 @@
+services.msc  打开服务
+
+msconfig  查看开机启动项
+
+net start ServiceName（打开服务）
+sc create 创建一个服务
+sc delete 删除一个服务
+sc query 查询服务
+sc config 配置服务
+sc stop 关闭服务
+sc start 开启服务
+sc pause 暂停服务
