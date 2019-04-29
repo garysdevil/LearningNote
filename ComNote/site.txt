@@ -1,30 +1,37 @@
-本地modelo账号：
-tdeng@modelo.io
-11111111
-
-
-
-bim：
-连接postgreql数据库  psql postgresql://modelodev:password@localhost:5432/bim_product
-https://bim.modeloapp.com  账号密码： Tylin modeloBI560
-
-front:
-https://modelo.io/    US
-https://modeloapp.com/login   CN
-
-dev:  https://develop.modelo.io/login
-pro:  https://portal.modelo.io/webs/login.html
+bim-backend:
+本地环境连接postgreql数据库  
+psql postgresql://modelodev:password@localhost:5432/bim_product
+开发环境下的Graphql
+https://bim-portal-dev.modeloapp.com/graphql
+生产环境下的Graphql
+https://bim-portal-prod.modeloapp.com/graphql
+x-access-token     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NzAsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTU1NDc4NDc1MSwiZXhwIjoxNTU3Mzc2NzUxfQ.aF8E4GGmrhEN3_ELg9XYbo12Ho5wzpiTqsZFsCkZozU
 
 modelo-backend:
-https://portal.modelo.io/webs/login.html
-账号密码:
-ypzhang@modelo.io
-yezhang617
+生产环境后端控制台
+https://portal.modelo.io/webs/login.html	   账号: ypzhang@modelo.io  密码: yezhang617
+开发环境后端控制台
+https://develop-portal.modelo.io/webs/login.html   账号: ypzhang@modelo.io  密码: yezhang617
+本地环境后端控制台  账号：tdeng@modelo.io  密码: 11111111
 
+bim-front:
+https://bim.modeloapp.com  账号： Tylin  密码：modeloBI560
+
+modelo-front:
+https://modelo.io/    US(对外开放)
+https://develop.modelo.io  US开发环境(对外开放)  账号：ypzhang@modelo.io 密码：yezhang617
+https://modeloapp.com/login   CN(对外开放)
+
+ennead-backend
+https://ennead-backend.modeloapp.com/webs/html
 
 Jeckin：
-https://jenkins.modeloapp.com/blue/pipelines/ admin TrnRp6vsLiQtuLxanyl3OXjupw53r9
-https://jenkins.modelo.io/blue/organizations/jenkins/Modelo_billing/activity/  4d3Czb0koOOcyA==
+https://jenkins.modeloapp.com/blue/pipelines/ admin TrnRp6vsLiQtuLxanyl3OXjupw53r9     国内
+https://jenkins.modelo.io/blue/organizations/jenkins/Modelo_billing/activity/  4d3Czb0koOOcyA==  国外
 
-strip test account
-dashboard.strip.com       xyu@modelo.io   19900309
+AWS:
+https://496692834200.signin.amazonaws.cn/console
+账号： 496692834200   用户名：gary      密码：garygary
+
+Strip Test Account
+dashboard.strip.com  账户：xyu@modelo.io   密码：19900309
