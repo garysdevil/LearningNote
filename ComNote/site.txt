@@ -11,7 +11,7 @@ modelo-backend:
 外国生产环境后端控制台
 https://portal.modelo.io/webs/login.html	   账号: ypzhang@modelo.io  密码: yezhang617
 中国生产环境后端控制台
-https://portal.modeloapp.com/webs/login.html
+https://portal.modeloapp.com/webs/login.html    账号: qisu@modelo.io   密码： Mpassword45
 开发环境后端控制台
 https://develop-portal.modelo.io/webs/login.html   账号: ypzhang@modelo.io  密码: yezhang617
 本地环境后端控制台  账号：tdeng@modelo.io  密码: 11111111
