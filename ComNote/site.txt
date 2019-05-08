@@ -1,12 +1,3 @@
-bim-backend:
-本地环境连接postgreql数据库  
-psql postgresql://modelodev:password@localhost:5432/bim_product
-开发环境下的Graphql
-https://bim-portal-dev.modeloapp.com/graphql
-生产环境下的Graphql
-https://bim-portal-prod.modeloapp.com/graphql
-x-access-token     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NzAsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTU1NDc4NDc1MSwiZXhwIjoxNTU3Mzc2NzUxfQ.aF8E4GGmrhEN3_ELg9XYbo12Ho5wzpiTqsZFsCkZozU
-
 modelo-backend:
 外国生产环境后端控制台
 https://portal.modelo.io/webs/login.html	   账号: ypzhang@modelo.io  密码: yezhang617
@@ -16,13 +7,22 @@ https://portal.modeloapp.com/webs/login.html    账号: qisu@modelo.io   密码： Mp
 https://develop-portal.modelo.io/webs/login.html   账号: ypzhang@modelo.io  密码: yezhang617
 本地环境后端控制台  账号：tdeng@modelo.io  密码: 11111111
 
+modelo-front:
+https://modelo.io/    US
+https://modeloapp.com/login   CN   自己创建的免费账户：123@163.com 12345678
+https://develop.modelo.io  开发环境 账号：ypzhang@modelo.io 密码：yezhang617   
+
+bim-backend:
+本地环境连接postgreql数据库  
+psql postgresql://modelodev:password@localhost:5432/bim_product
+开发环境下的Graphql
+https://bim-portal-dev.modeloapp.com/graphql
+生产环境下的Graphql
+https://bim-portal-prod.modeloapp.com/graphql
+x-access-token     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NzAsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTU1NDc4NDc1MSwiZXhwIjoxNTU3Mzc2NzUxfQ.aF8E4GGmrhEN3_ELg9XYbo12Ho5wzpiTqsZFsCkZozU
+
 bim-front:
 https://bim.modeloapp.com  账号： Tylin  密码：modeloBI560
-
-modelo-front:
-https://modelo.io/    US(对外开放)
-https://develop.modelo.io  US开发环境(对外开放)  账号：ypzhang@modelo.io 密码：yezhang617
-https://modeloapp.com/login   CN(对外开放)
 
 ennead-backend
 https://ennead-backend.modeloapp.com/webs/html
