@@ -27,6 +27,9 @@ https://bim.modeloapp.com  账号： Tylin  密码：modeloBI560
 ennead-backend
 https://ennead-backend.modeloapp.com/webs/html
 
+ChinaLife：
+https://chinalife.modeloapp.com/  账号：modeloBI  密码：modeloBI666
+
 Jeckin：
 https://jenkins.modeloapp.com/blue/pipelines/ admin TrnRp6vsLiQtuLxanyl3OXjupw53r9     国内
 https://jenkins.modelo.io/blue/organizations/jenkins/Modelo_billing/activity/  4d3Czb0koOOcyA==  国外
