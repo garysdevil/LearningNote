@@ -1,0 +1,27 @@
+1、安装 Docker
+# 安装依赖
+sudo yum install -y yum-utils \
+  device-mapper-persistent-data \
+  lvm2
+
+# 添加docker下载仓库
+# 官方
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+# 阿里云提供的
+sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+
+如果想安装指定版本的docker-ce，可以先用命令查看版本号
+yum list docker-ce --showduplicates | sort -r 
+## 默认安装最新版
+sudo yum install docker-ce 
+
+# 启动docker-ce
+sudo systemctl start docker
+
+2、安装 docker-compose
+# 可以上github上查看最新的docker-compose版本
+https://github.com/docker/compose/releases/
+#下载
+curl -L https://github.com/docker/compose/releases/download/1.25.0-rc1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+# 授权
+sudo chmod +x /usr/local/bin/docker-compose

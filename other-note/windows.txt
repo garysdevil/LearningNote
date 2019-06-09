@@ -1,6 +1,9 @@
 services.msc  打开服务
 
 msconfig  查看开机启动项
+lusrmgr.msc 用户管理
+eventvwr.msc 事件查看器
+msinfo32 系统信息（硬件资源，组件，软件环境）
 
 net start ServiceName（打开服务）
 sc create 创建一个服务

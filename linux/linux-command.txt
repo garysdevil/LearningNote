@@ -1,0 +1,62 @@
+﻿cat :view file content; -nl :attached line number;
+rm :delete file ,or  folder by -r;
+mv :move file or update file'name;
+mkdir :create folder;
+touch :craete file;
+rmdir :delete empty folder;
+less: view file content by page;
+cd .. :back to the last foler;
+cd / :back to the root folder;
+cd :into folder in current folder;
+ls: list all file and folder in the current directory;
+umask -S 查看当前用户创建文件时默认的权限;
+file:查看文件类型;
+chmod
+chown
+chgrp
+cksum:crc检查文件是否在传输过程出现错误；
+cmp检查两个文件是否有差异；
+cp复制粘贴；
+
+ln :create a link
+for example ,there is one folder named f1
+command:f1 ln f2
+function: produce hard link；
+command:f1 ln -s f3
+function: product softlink；
+
+
+关于磁盘文件大小：
+du -sh  查看文件夹的大小
+df 将系统内所有的分区列和大小出来
+
+关于搜索查找：
+find 查找文件   -type  -name 
+locate 查找文件位置，从/var/lib/locatedb(这个数据库中含有本地所有的文件信息，数据库的更新速度是7天更新一次，update手动更新数据库)
+whereis 只能搜索二进制文件，即通过程序名搜索
+which 在PATH变量指定的路径中，搜索某个系统命令的位置。
+
+关于分区操作
+fdisk -l 查看系统内的所有分区
+磁盘格式化：
+mke2fs 设备名称
+
+关于磁盘检验：
+fsck  
+badblocks
+
+磁盘载入与卸载：
+mount
+unmount
+
+修改磁盘参数：
+mknod
+e2label
+tune2fs
+hdparm
+
+vim:
+command mode,insert mode,last line mode.
+i  --into command mode.
+:  --into "last line mode"
+x  --Delete the characters where the current cursor is located

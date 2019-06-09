@@ -1,0 +1,131 @@
+命令：
+sudo 让普通用户可执行root命令
+su 通过当前用户的账户密码切换到另外一个用户
+sudo su root 通过其它用户操纵根用户
+
+last 查看登录用户登录成功的信息
+lastb  查看登录用户登录失败的信息
+存放登录成功的信息
+/var/log/wtmp 
+存放登录失败的信息
+/var/log/btmp
+
+& 使任务在后台运行
+| 管道
+&&  || ;
+
+linux四个主要部分：
+Linux Shell
+文件系统
+Linux实用工具：编辑器，过滤器，交互程序
+	编辑器：用于编辑文件。
+	过滤器：用于接收数据并过滤数据。
+	交互程序：允许用户发送消息或接收来自其它用户的消息。（用户与机器的信息接口）	
+
+文件目录：
+bin:二进制文件程序工具，是系统不可缺失的工具机，命令一般存放在这里面
+boot:系统启动的必须文件
+dev:系统的外部设备
+etc:系统的所有配置文件都放在这里
+home:普通用户的默认主目录位置
+inired:临时目录，初始化引导时候用
+lib:动态链接库存放的位置
+lost+found:自检的时候发现的碎片文件，某文件丢失了可能在那里找回了
+misc:基本不用，杂七杂八
+mnt:挂在外部设备的光驱
+opt：安装的第三方软件
+root:
+sbin:超级用户的管理工具，系统不能缺失的
+tmp:临时文件
+usr:所有用户的公共资料
+var:动态变化的数据，数据库，日志等
+
+
+白色的文件：一般的文件
+蓝色的文件：目录
+绿色的文件：可执行的文件
+
+
+rpm -qa subversion //查看某软件被安装了吗
+
+netstat -l       #只显示监听端口
+netstat -ntlp   查看当前所有tcp端口；
+ps -ef  列出所有进程；
+
+关于防火墙：
+systemctl status firewalld 查看firewalld状态
+systemctl stop firewalld.service 关闭防火墙
+firewall-cmd --reload  要想使配置的端口号生效,必须重新载入
+查看防火墙规则
+firewall-cmd --list-all 
+查询端口是否开放
+firewall-cmd --query-port=8080/tcp
+开放80端口
+firewall-cmd --permanent --add-port=80/tcp
+移除端口
+firewall-cmd --permanent --remove-port=8080/tcp
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+端口转发：
+ firewall-cmd --permanent --add-forward-port=port=33:proto=tcp:toport=22:toaddr=172.16.7.8
+ firewall-cmd --permanent --add-forward-port=port=80:proto=tcp:toport=8080:toaddr=134.175.167.56
+
+tomcat日志时时查看
+1、先切换到：cd usr/local/tomcat/logs
+2、tail -f catalina.out
+3、这样运行时就可以实时查看运行日志了
+
+导.sql入数据库
+方法一：mysql -u 用户名 -p  数据库名 < 数据库名.sql
+方法二：source 文件路径数据库名
+
+关于解压：
+tar xvfz myfile.tar.bz2 
+x 是解压 
+v 是复杂输出 
+f 是指定文件 
+z gz格式
+
+
+linux curl是通过url语法在命令行下上传或下载文件的工具软件，它支持http,https,ftp,ftps,telnet等多种协议，常被用来抓取网页和监控Web服务器状态。
+
+添加用户和SSH操作：
+useradd 用户名
+设置用户密码  passwd 用户名（创建的用户必须要有加密的密码才能进行登录操作  ）
+使用户能能ssh远程登录到linux服务器上的操作：
+修改/etc/ssh/sshd_config文件，在文件结尾处添加：AllowUsers 用户名称(此处注意有需要的话将原来的root用户也加上，否则，会SSH对root访问拒绝)
+重启SSH服务：
+service sshd restart
+或者 /etc/init.d/sshd restart
+或者 /sbin/service sshd restart
+
+rpm 包管理工具
+-qa 查看rpm所管理的所有的包
+-e 删除一个软件包
+-ivh  包名  
+--nodeps   忽略软件包的依赖关系
+
+yum list installed 查看所有使用yum已经安装的软件包
+yun -y(自动选择yes) install
+
+更改普通用户权限为root的文件位置
+/etc/sudoers
+
+电脑：CPU 内存 硬盘 网卡 显卡 IO设备
+主机服务
+NAT（类似IP共享的功能）：Network Address Transaction
+SAMBA（类似网上邻居的功能）是一个普通的文件服务器
+Mail（邮件服务器）
+Web（WWW服务器）
+DHCP（动态主机配置协议）
+Proxy（代理服务器）
+FTP
+
+文件系统 ext2 ext3
+
+lsof 是 linux 下的一个非常实用的系统级的监控、诊断工具。
+1  监控文件 查看文件、设备被哪些进程占用  lsof 文件路径名
+2  监控进程 指定进程号，可以查看该进程打开的文件  lsof -p 进程号
+3  监控网络 查看指定端口有哪些进程在使用（lsof -i 列出所有的打开的网络连接） lsof -i:进程号
+4  监控用户 查看指定用戶打开的文件（lsof -u ^lakshmanan 可以排除某用户）： lsof -u 用户名
+5  监控应用程序 查看指定程序打开的文件： lsof -c 程序名
+
