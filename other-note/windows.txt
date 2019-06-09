@@ -1,4 +1,6 @@
 services.msc  打开服务
+compmgmt.msc  计算机管理
+regedit  打开注册表
 
 msconfig  查看开机启动项
 lusrmgr.msc 用户管理
