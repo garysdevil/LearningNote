@@ -54,9 +54,3 @@ mknod
 e2label
 tune2fs
 hdparm
-
-vim:
-command mode,insert mode,last line mode.
-i  --into command mode.
-:  --into "last line mode"
-x  --Delete the characters where the current cursor is located

@@ -1,4 +1,10 @@
-﻿复制粘贴删除
+﻿vim:
+command mode,insert mode,last line mode.
+i  --into command mode.
+:  --into "last line mode"
+x  --Delete the characters where the current cursor is located
+
+复制粘贴删除
 y$  :  复制到字符末未
 yy  :  复制一行
 yw  :  复制一个单词
