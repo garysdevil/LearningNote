@@ -129,3 +129,5 @@ lsof 是 linux 下的一个非常实用的系统级的监控、诊断工具。
 4  监控用户 查看指定用戶打开的文件（lsof -u ^lakshmanan 可以排除某用户）： lsof -u 用户名
 5  监控应用程序 查看指定程序打开的文件： lsof -c 程序名
 
+修改ssh默认端口号
+vi /etc/ssh/sshd_config

@@ -54,3 +54,10 @@ mknod
 e2label
 tune2fs
 hdparm
+
+tee 把数据重定向到给定文件和屏幕上。
+gpasswd -a ${USER} docker  :将当前用户	加入docker组
+
+awk -F: '/root/{print $0}' /etc/passwd   
+-F 定义分隔符
+输出含有/root/ 的所有行
