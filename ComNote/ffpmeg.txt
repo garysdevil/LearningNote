@@ -1,24 +1,15 @@
 frame: 编码的帧数量
-
 fps：每秒编码的帧数
-
 q：质量因子
-
 size：视频和音频编码后的大小(个人理解)，即 Lsize=     566kB ，基本等于 video:397kB 和audio:160kB 之和
-
 time：输出帧的显示时间
-
 bitrate：输出视频的帧率
-
 dup：输入帧dupliate的数量
-
 drop：输入帧drop的个数
-
 speed：编码速度
 
-
-  如果你很有耐心，通常的建议是使用最慢的预设。目前所有的预设按照编码速度降序排列为：                      
-  ultrafast,superfast,veryfast,faster,fast,medium,slow,slower,veryslow,placebo
+ 如果很有耐心，通常的建议是使用最慢的预设。目前所有的预设按照编码速度降序排列为：                      
+ ultrafast,superfast,veryfast,faster,fast,medium,slow,slower,veryslow,placebo
 
 2 为什么 placebo 是一个浪费时间的玩意儿？
  与 veryslow相比，它以极高的编码时间为代价换取了大概1%的视频质量提升，这是一种收益递减准则，veryslow 与 slower相比提升了3%；slower 与 slow相比提升了5%；slow 与 medium相比提升了5%~10%。
@@ -34,7 +25,6 @@ psnr：      为提高psnr做了优化的参数；
 ssim：      为提高ssim做了优化的参数； 
 fastdecode： 可以快速解码的参数； 
 zerolatency：零延迟，用在需要非常低的延迟的情况下，比如电视电话会议的编码。
-
 
 
 2.ffmpeg转化成HLS时附带的指令 

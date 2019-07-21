@@ -2,3 +2,6 @@ ping
 ping -l 65500 -t ip
 -t  Ping 指定的主机，直到停止.
 -l 发送缓冲区大小。
+
+
+网络配置命令行工具 netsh

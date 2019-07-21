@@ -2,11 +2,8 @@
 2.docker-compose.yml 定义组成应用的各服务
 3.docker-compose up 启动整个应用
 
-未启动容器
-
-docker cp 原地址  目的地址
-docker cp D:\xsg\NOWwork\nginx.conf  36afaec8b0b4:/etc/nginx/nginx.conf
-
+将主机上的文件copy到容器内：docker cp 原地址  目的地址
+例如：docker cp D:\xsg\NOWwork\nginx.conf  36afaec8b0b4:/etc/nginx/nginx.conf
 
 默认情况下，docker stats 命令会每隔 1 秒钟刷新一次输出的内容。下面是输出的主要内容：
 [CONTAINER]：以短格式显示容器的 ID。
