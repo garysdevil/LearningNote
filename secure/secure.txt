@@ -1,9 +1,11 @@
-webshell
-钓鱼
-xss
-csrf
-劫持
-url跳转
-sql注入漏洞
-命令注入
-注入：主要是通过双引号进行闭合，然后加上&符合进行命令的添加。
+服务端（服务器）
+客户端
+网络协议
+信息传输通道
+
+C:\Windows\System32\drivers\etc  存放域名解析记录
+chrome://net-internals
+
+那么TTL的值一开始是什么呢？不同的操作系统默认下TTL是不同的。
+默认情况下，Linux系统的TTL值为64或255，Windows NT/2000/XP系统的TTL值为128，Windows 98系统的TTL值为32，UNIX主机的TTL值为255。
+

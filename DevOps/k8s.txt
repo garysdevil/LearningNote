@@ -1,0 +1,27 @@
+kubectl get podes 
+-o wide 
+-n kube-system
+-w 持续查看
+
+kubectl run nginx --replicas=2 --image=nginx --port=80
+
+kubectl expose deployment nginx --port=80 --type=NodePort --target-port=80 --name=nginx-service
+
+kubectl describe pod nginx-7c45b84548-56bdc
+
+kube get services,endpoints,pods 
+
+
+生成yaml文件
+kubectl run nginx --replicas=2 --image=nginx --port=80  my-deploy -o yaml --dry-run > my-deploy.yaml
+kubectl get deploy/nginx --export -o yaml > a.yaml
+
+健康检查Prob
+两种类型：livenessProbe , readinessProbe
+三种检查方式： httpGet ， exec ， tcpSocket
+
+service
+类型 ： ClusterIP, NodePort, LoadBalance
+代理模式： Iptables, IPVS
+
+

@@ -1,9 +1,4 @@
-C:\Windows\System32\drivers\etc  存放域名解析记录
-chrome://net-internals
-
-
-那么TTL的值一开始是什么呢？不同的操作系统默认下TTL是不同的。默认情况下，Linux系统的TTL值为64或255，Windows NT/2000/XP系统的TTL值为128，Windows 98系统的TTL值为32，UNIX主机的TTL值为255。
-
+﻿
 
 【全平台客户端下载】[https://github.com/getlantern/forum/issues/5620]客户端用于各种设备连接到服务器实现翻墙。
 SSR官方网站：https://shadowsocks.org/en/index.html（什么版本都有可惜是英文版的）
