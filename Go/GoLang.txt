@@ -1,0 +1,26 @@
+下载地址：
+https://golang.org/dl/
+https://golang.google.cn/dl/
+
+压缩包下载并解压到你想要的目录下：https://dl.google.com/go/go1.12.8.windows-amd64.zip
+
+
+环境变量:GoRoot:D:\SoftCode\go1.12.7\go
+在path里添加 %GoRoot%\bin
+
+
+GOROOT：Go的安装路径，如果这个路径不正确，Go的一系列命令都无法执行。
+GOPATH：编译后二进制文件的存放目的地和import包的搜索路径。（默认为当前目录下）
+
+var f string = "Runoob" 简写为 f := "Runoob"
+:=  一种动态声明方式，出现在 := 左侧的变量不应该是已经被声明过的，否则会导致编译错误，此方式只能在函数体中出现。
+
+iota
+<< 二进制左移
+在函数内，变量声明而不使用，编译时则会报错。
+不同之处：
+func main()  
+{  // 错误，{ 不能在单独的行上
+    fmt.Println("Hello, World!")
+}
+可以直接返回多个值
