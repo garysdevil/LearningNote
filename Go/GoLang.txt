@@ -23,4 +23,57 @@ func main()
 {  // 错误，{ 不能在单独的行上
     fmt.Println("Hello, World!")
 }
-可以直接返回多个值
+只有for循坏：break，continue，goto
+
+函数，可以直接返回多个值
+func swap(x, y string) (string, string) {
+   return y, x
+}
+
+数组：
+声明：var variable_name [SIZE] variable_type
+初始化：var balance = [5]float32{1000.0, 2.0, 3.4, 7.0, 50.0}
+var balance = [...]float32{1000.0, 2.0, 3.4, 7.0, 50.0}
+
+结构体
+type struct_variable_type struct {
+   member definition;
+   ...
+   member definition;
+}
+
+初始化切片
+var identifier []type = make([]T, length, capacity)
+len() 获取长度
+cap() 获取最长可达
+当追加值时，容量不够，则容量进行翻倍。
+
+Range 用于迭代
+
+Map集合
+/* 声明变量，默认 map 是 nil */
+var map_variable map[key_data_type]value_data_type
+/* 使用 make 函数 */
+map_variable := make(map[key_data_type]value_data_type)
+根据键删除某个值 delete(map_variable,key)
+
+支持类型转换
+float32()
+
+Go 语言接口
+type interface_name interface {
+   method_name1 [return_type]
+   ...
+   method_namen [return_type]
+}
+/* 实现接口方法 */
+func (struct_name_variable struct_name) method_name1() [return_type] {
+   /* 方法实现 */
+}
+
+Go 并发，通过go关键字
+
+通道（channel）是用来传递数据的一个数据结构。
+可用于两个 goroutine 之间通过传递一个指定类型的值来同步运行和通讯。操作符 <- 用于指定通道的方向，发送或接收。如果未指定方向，则为双向通道。
+创建通道：ch := make(chan int)
+可以设置缓冲区：ch := make(chan int, 100)
