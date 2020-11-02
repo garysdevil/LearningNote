@@ -1,0 +1,35 @@
+conda --version
+
+1、查看已安装的包
+conda list
+
+11、显示所有的环境：
+conda env list
+
+2、更新所有包
+conda upgrade --all
+
+4、删除包
+conda remove package_name
+
+5、更新包
+conda update package_name
+
+6、不知道包名要找包
+conda search name
+
+activate  : activate 能将我们引入anaconda设定的虚拟环境中, 如果你后面什么参数都不加那么会进入anaconda自带的base环境
+
+jupyter notebook --generate-config
+
+在jupyter_notebook_config.py文件里修改配置
+c.NotebookApp.notebook_dir=''  修改工作空间路径
+
+scapy  底层是异步框架 twisted , 支持并发的爬虫框架。
+
+gevent  基于协程的Python网络库
+
+
+
+
+python为了优化速度，会把【-5,256】之间的数据提前存放在小整数对象池中，程序中只要用的【-5，256】之间的数据不会再重新创建一份，都是指向对象池中的同一份数据
