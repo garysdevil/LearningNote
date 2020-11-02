@@ -1,0 +1,27 @@
+gzip模块需要 zlib 库
+rewrite模块需要 pcre 库
+ssl 功能需要openssl库
+
+yum -y install gcc gcc-c++ automake pcre pcre-devel zlip zlib-devel openssl openssl-devel
+curl -O http://nginx.org/download/nginx-1.9.8.tar.gz
+tar xzvf nginx-1.9.8.tar.gz
+cd nginx-1.9.8
+配置
+./configure --prefix=/opt/nginx --with-http_stub_status_module --with-http_ssl_module --with-pcre
+编译
+make 
+安装
+make install
+创建软连接，使其被添加进全局变量里
+ln -s /opt/nginx/sbin/nginx /usr/bin/nginx
+添加启动命令 进开机自启脚本里
+sed -i   '$a\nginx' /etc/rc.d/rc.local
+
+tip
+查看rc-local.service是否正常 systemctl | grep rc-local.service
+假如存在fail字符，则进行 systemctl start rc-local.service 和 systemctl enable rc-local.service
+
+
+ 
+
+

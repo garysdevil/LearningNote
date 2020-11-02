@@ -1,0 +1,15 @@
+1.Dockerfile 定义应用的运行环境
+2.docker-compose.yml 定义组成应用的各服务
+3.docker-compose up 启动整个应用
+
+将主机上的文件copy到容器内：docker cp 原地址  目的地址
+例如：docker cp D:\xsg\NOWwork\nginx.conf  36afaec8b0b4:/etc/nginx/nginx.conf
+
+默认情况下，docker stats 命令会每隔 1 秒钟刷新一次输出的内容。下面是输出的主要内容：
+[CONTAINER]：以短格式显示容器的 ID。
+[CPU %]：CPU 的使用情况。
+[MEM USAGE / LIMIT]：当前使用的内存和最大可以使用的内存。
+[MEM %]：以百分比的形式显示内存使用情况。
+[NET I/O]：网络 I/O 数据。
+[BLOCK I/O]：磁盘 I/O 数据。 
+[PIDS]：PID 号。

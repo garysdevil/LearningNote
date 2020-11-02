@@ -1,0 +1,3 @@
+const  passaa="123" 
+b=passaa
+MsgBox(passaa)

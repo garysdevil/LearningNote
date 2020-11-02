@@ -1,0 +1,49 @@
+启动机制：
+冷启动
+热启动
+
+销毁：
+进入后台5分钟后
+5s内收到系统的告警
+
+
+
+小程序加载机制：
+View  AppService  Storage  CDN  WebServer
+
+小程序生命周期：
+1 onLaunch
+2 onShow
+3 onHide
+4 onError
+globalData
+
+页面生命周期
+1 onLoad
+2 onShow
+3 onReady
+4 onHide
+5 onUnload
+data
+
+两个线程：AppService Thread  ,  View Thread
+
+
+路由：
+初始化 		新页面入栈
+打开新页面 	新页面入栈
+页面重定向 
+页面返回
+Tab切换
+重加载
+
+
+事件捕获阶段
+事件处理阶段
+事件冒泡阶段
+
+可捕获事件：
+touchstart,touchmove,touchcancel,touchend,tag,longpress,longtap
+可冒泡事件:
+touchstart,touchmove,touchcancel,touchend,tag,longpress,longtap
+transitionend,animationstart,animationiteration,animationend,touchforcechange

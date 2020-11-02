@@ -1,0 +1,57 @@
+﻿（1）	1. Git基本配置
+git config可以配置git的参数
+使用git config --list查看已经配置的git参数。
+有三个级别的保存位置，--system、--global、--local，分别表示所有用户（本系统）、当前用户（全局）、本地配置（当前目录），默认使用--local。
+在使用Git提交前，必须配置用户名和邮箱，这些信息会永久保存到历史记录中。
+例如：
+git config --global user.name "gary"
+git config --global user.email zyvj@163.com
+
+（2）	 Git中每个文件都有三种状态：committed、staged、modified。：modified --> ---> staged ---> committed
+（3）	查看工作空间的基本信息操作：git status 
+（4）	初始化当前工作空间，即创建Git仓库操作 : git init
+（5）	显示所有远程的分支和相关信息操作：git remote show origin 
+（6）	获取远端库最新信息操作：git fetch origin 
+（7）	更新本地工作空间操作：git pull   或者  git fetch + git merge  
+（8）	进行比较操作：
+git diff xxx origin/xxx  工作目录和缓冲区比较
+--cache 缓存区和本地仓库比较
+--HEAD 工作目录和本地仓库比较
+git diff --stat 仓库名 origin   比较工作区和最新本地仓库的差异
+git diff  FETCH_HEAD 接比较fetch下来的内容和本地工作区的区别
+（9）	git log 输出相关日志信息。
+-p，用来显示每次提交的内容差异.加上 -2 来仅显示最近两次提交：例如： git log -p -2。
+--pretty=oneline ，short用来精简日志。
+其它：
+git log -p + 文件名 （可查看该文件以前每一次push的修改内容）
+git log - p -1 + 文件名 （只查看该文件当前这一次的push内容）
+（10）	拉取分支操作：git clone  - b 仓库地址
+（11）	打补丁操作：git checkout  –p  分支名
+（12）	提交工作空间的内容进入缓存区：
+git add -A  提交所有变化
+git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
+git add .   提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
+（13）	bash下，整个项目的提交过程
+1 git add  -A 
+2 git commit
+3 git push 
+（14）	重置工作空间
+ git reset --soft --mix –hard
+git checkout .
+（15）	将另一个分支的commit合并到此分支上。
+git  cherry-pick  某次commit的id号
+（16）	删除远程的分支
+git push origin :分支名 （没有删除跟踪）
+git push origin --delete 分支名 （删除了跟踪）
+git fetch -p 删除不存在的远程跟踪分支
+（17）	查看此文件内容详细信息操作：git blame fileName 
+（18）	git push origin 本地分支名:远程分支名 创建新的远程分支并push上去
+（19）	入栈出栈操作
+git stash
+git stash pop
+  (20)  当在本地建立仓库，第一次初始化代码时     
+git init
+git add -A
+git commit -m 'init'
+git remote add origin 远程仓库地址
+git push -u origin master

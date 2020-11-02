@@ -1,0 +1,29 @@
+mongod        环境变量    默认端口号为27017       下载3.6.9版本的
+开启mongod：  mongod --dbpath db的路径 
+卸载
+首先停止服务
+net stop MongoDB
+删除服务管理器中的mongodb
+
+mongod --remove
+
+Ealang  erl     环境变量 
+
+Rabbit 	     环境变量
+安装管理工具RabbitMQ-Plugins，在RabbitMQ Server\rabbitmq_server-3.7.9\sbin\执行  rabbitmq-plugins enable rabbitmq_management
+可以通过访问http://localhost:15672进行测试，默认的登陆账号为：guest，密码为：guest。
+
+memcached    默认端口号为11211
+下载安装包
+在 memcached1.4.5 版本之后，memcached 不能作为服务来运行，需要使用任务计划中来开启一个普通的进程，在 window 启动时设置 memcached自动执行。 
+schtasks /create /sc onstart /tn memcached /tr "'c:\memcached\memcached.exe' -m 512"
+
+注意  ： 这种操作在powershell中不被支持，在cmd中也不被支持，这是Mac中bash或Linux的shell中的独特操作）error：NODE_ENV 不是内部或外部命令，也不是可运行的程序，或者批处理文件
+"NODE_ENV=test PORT=8894  nodemon server.js "
+billing上加
+"testLocalWin": "set NODE_ENV=test&& set PORT=8894&& nodemon server.js"
+MODELO上加
+
+
+npm install -g mocha 测试框架
+npm install -g node-gyp  python依赖环境

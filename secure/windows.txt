@@ -1,0 +1,24 @@
+ping 
+ping -l 65500 -t ip
+-t  Ping 指定的主机，直到停止.
+-l 发送缓冲区大小。
+
+
+网络配置命令行工具 netsh
+services.msc  打开服务
+compmgmt.msc  计算机管理
+regedit  打开注册表
+
+msconfig  查看开机启动项
+lusrmgr.msc 用户管理
+eventvwr.msc 事件查看器
+msinfo32 系统信息（硬件资源，组件，软件环境）
+
+net start ServiceName（打开服务）
+sc create 创建一个服务
+sc delete 删除一个服务
+sc query 查询服务
+sc config 配置服务
+sc stop 关闭服务
+sc start 开启服务
+sc pause 暂停服务

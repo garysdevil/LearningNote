@@ -1,0 +1,36 @@
+﻿曾经：
+jsp + servlet(控制数据和业务逻辑) + javaBean
+jsp + servlet +
+DAO(vo(相当于javaBean),dao,impl(真实操作),proxy(可以进行额外操作：记录日志，方法前后),factory(可以进行单例模式的设置,可以根据值的传递实现不同的数据库操作))
+servlet调用factory获取proxy‘
+proxy实现dao接口,调用真实的操作对象impl
+impl 进行数据库的操作
+
+
+现在：
+MVC
+model：pojo+dao(接口)+mapper(放数据库操作语句,与dao接口对应*.mapper文件)+service+ serviceImpl
+view：html
+controller
+
+框架：SSM
+spring：
+IOC 控制反转,依赖注入。Spring中的IoC的实现原理就是工厂模式加反射机制。功能：进行所有对象的管理
+AOP 切面,事务的管理
+
+SpringMVC：
+管理控制层
+
+MyBatis：
+数据库持久层，消除JDBC代码
+
+Java 的 Servlet 使用了线程池，即每个 Servlet 运行在一个线程上。
+线程虽然比进程轻量，但也是相对的。 
+有人测试过 ，每个线程独享的栈的大小是 1M，依然不够高效。
+除此以外，多线程编程会带来各种麻烦，这一点想必程序员们都深有体会。
+如果不使用线程，还有两种解决方案，分别是使用协程(coroutine)和非阻塞 I/O。
+协程比线程更加轻量，多个协程可以运行在同一个线程中，并由程序员自己负责调度，这种技术在 Go 语言中被广泛使用。
+而非阻塞 I/O 则被 Node.js 用来处理高并发的场景。
+
+
+

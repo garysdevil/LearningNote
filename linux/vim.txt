@@ -1,0 +1,58 @@
+﻿vim:
+command mode,insert mode,last line mode.
+i  --into command mode.
+:  --into "last line mode"
+x  --Delete the characters where the current cursor is located
+
+复制粘贴删除
+y$  :  复制到字符末未
+yy  :  复制一行
+yw  :  复制一个单词
+3dd :  删除3行
+dd  :  删除一行
+dw  :  剪切至单词词末
+d$  :  
+x   :   删除一个字符
+b   移动至词首
+w   移动至词末
+"+y  从缓冲区复制到系统剪切版
+"+p  从系统剪切板复制到缓冲区
+
+A  快速定位到行尾
+I  快速定位到行头
+gg  跳到第一行
+G  跳到最后一行
+v  逐字符可视化
+shift+v  逐行可视化
+ctrl+v   按照块的方式选择文本
+=     自动缩进
+J     被可视化区域合为一行/将这一行和上一行合为一行
+r字符 所有字符替换为新字符
+>和< 将选中字符右移或左移 shiftwidth位置
+
+set noundofile
+set nobackup
+set noswapfile
+
+宏的录制
+q定义的快捷字母 开始
+q 		结束
+@定义的快捷字母 使用
+我的html结束标签的录制，有问题：
+ qj b yw w a </> ESC  h p b hh 
+<html></html>
+
+
+vim自带的文件浏览器
+ - 使用方法 :Explore, :Sexplore, :Vexplore, or :Sex, :Vex
+
+打开终端 term 
+多窗口 sp   vsp   
+多窗口切换 W  上下左右
+窗口移动位置 W  +r
+
+:Tab /=        等号对齐
+:Tab /:        冒号对齐
+:Tab /:\zs     冒号后的文字对齐
+
+:vimgrep 全局查找
